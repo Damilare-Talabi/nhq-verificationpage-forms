@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6b3ff6af6f.js" crossorigin="anonymous"></script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> 
+    <title>NPHCDA - COVID-19</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <div class="container-fluid">
+          <img src="img/logo.svg" class="logo" alt="nphcda logo" width="370" height="100">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 push">
+              <li class="nav-item">
+                <a class="nav-link first active" aria-current="page" href="#">Registration</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle two" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Corporate Vaccination
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Public Institutions</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Private Institution</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link three" href="#">Vaccination Sites</a>
+              </li>
+
+              <div class="dropdown dame">
+                <a class="btn btn-secondary rounded-pill dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><img src="img/nigeria-flag.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                  eng
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Igbo</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Hausa</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Yoruba</a></li>
+                </ul>
+              </div>
+          
+
+              <li class="">
+                <a class="four" href="#" onclick = "Redirect1();"><button type="button" class="btn btn-success rounded-pill second">verification Portal</button></a>
+              </li>
+              
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+          <div class="row">
+            <div class="col-lg-2"></div>  
+            <div class="col-lg-8 movement">
+                <div class="container border rounded inside">
+                    <h2 class= "initial">Registration Form for COVID-19 Vaccination</h2>  
+                    <form class="row g-3">
+                        <div class="col-md-4">
+                          <label for="inputLastname" class="form-label nametag">Last name (Surname)</label>
+                          <input type="email" class="form-control" id="inputLastname">
+                          <div class="invalid-feedback">error</div>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="inputsurname" class="form-label nametag">First name (Given Name)</label>
+                          <input type="password" class="form-control" id="inputPassword4">
+                          <div class="invalid-feedback">error</div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputmiddlename" class="form-label nametag">Middle name</label>
+                            <input type="password" class="form-control" id="inputmiddlename">
+                            <div class="invalid-feedback">error</div>
+                          </div>
+                        <div class="col-md-6">
+                          <label for="inputEmailaddress" class="form-label nametag">Email Address</label>
+                          <div class="invalid-feedback">error</div>
+                          <input type="text" class="form-control" id="inputEmailddress" >
+                          <div class="invalid-feedback">error</div>
+                        </div>
+                        <div class="col-md-6"></div>
+                        <div class="col-md-6">
+                            <div class="">
+                                <label class="form-label nametag top">Contact phone number (Please enter a relative's no if you do not have one)</label>
+                                <input id="phone" type="number" name="phone" class="form-control" required="true" value="">
+                                <div class="invalid-feedback">error</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="">
+                                <label class="form-label nametag top">Confirm your phone number (re-enter phone number)</label>
+                                <input id="phone2" type="number" name="phoneconf" class="form-control down" required="true" value="">
+                                <div class="invalid-feedback">error</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="">
+                                <label class="form-check-label nametag top" for="flexCheckIndeterminate">
+                                    Is the exact Date of Birth known?
+                                  </label>
+                            <!-- <label>Is the exact Date of Birth known?</label> -->
+                            <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label nametag" for="exampleRadios1">
+                              Yes 
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label nametag " for="exampleRadios2">
+                              No
+                            </label>
+                          </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" id="dateofbirth">
+                        <div class="">
+                            <label class="nametag form-label">Enter your approximate age</label>
+                            <input type="number" name="estimatedage" class="form-control" id="estimatedage" value="0">
+                            <div class="invalid-feedback">error</div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" id="idtype">
+                        <div class="nametag form-label"><label>Type of ID</label></div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="nin">National ID (NIN)</option>
+                        <option value="dl">Driver's License</option>
+                        <option value="ip" selected>International Passport</option>
+                        <option value="vc">Voters Card</option>
+                        <option value="ot">I don't have</option>
+                      </select>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="">
+                            <label class="nametag form-label">Passport Number</label>
+                            <input id="passortNumber" type="number" name="passortNumber" class="form-control" required="true" value="">
+                            <div class="invalid-feedback">error</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="">
+                            <label class="form-check-label nametag" for="flexCheckIndeterminate">
+                                Sex
+                              </label>
+                    
+                        <div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label nametag" for="exampleRadios1">
+                          Male 
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label nametag" for="exampleRadios2">
+                          Female
+                        </label>
+                      </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label class="nametag form-label">Residential Area</label>
+                <div class="input-group">
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                  </div>
+                  <div class="invalid-feedback">error</div>
+
+                </div>
+                <hr class="line">
+
+                <div class="col-md-6">
+                    <h4>Work Information</h4>
+                    <div class="">
+                        <label class="form-check-label nametag" for="flexCheckIndeterminate">
+                            Do you work in the health sector
+                          </label>
+                    <!-- <label>Is the exact Date of Birth known?</label> -->
+                    <div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label nametag" for="exampleRadios1">
+                      Yes 
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label nametag" for="exampleRadios2">
+                      No
+                    </label>
+                  </div>
+                    </div>
+                    <div class="invalid-feedback">error</div>
+                </div>
+            </div>
+
+            <hr class="line">
+
+            <div class="col-md-6">
+                <h4>Health History Information</h4>
+                <div class="">
+                    <label class="form-check-label nametag" for="flexCheckIndeterminate">
+                        Any known medical condition
+                      </label>
+               
+                <div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-labe nametag" for="exampleRadios1">
+                  Yes 
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label nametag" for="exampleRadios2">
+                  No
+                </label>
+              </div>
+                </div>
+                <div class="invalid-feedback">error</div>
+            </div>
+        </div>
+<hr class="line">
+        <div class="col-md-6">
+            <h4>Scheduled Information</h4>
+            <div class="">
+                <label class="form-check-label nametag " for="flexCheckIndeterminate">
+                    Preferred health facility type
+                  </label>
+            
+            <div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label nametag" for="exampleRadios1">
+              Public
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label nametag" for="exampleRadios2">
+              Private
+            </label>
+          </div>
+            </div>
+            <div class="invalid-feedback">error</div>
+        </div>
+    </div>
+    <div class="col-md-6"></div>
+
+    <div class="col-md-6" id="idtype">
+        <div ><label class="nametag top form-label">Preferred state for vaccination (Select the state where you would like to receive your vaccine)
+        </label></div>
+        <select id="stateofres" class="form-select" required="true" name="stateresidence"><option value="Abia State">Abia State</option><option value="Adamawa State">Adamawa State</option><option value="Akwa-Ibom State">Akwa-Ibom State</option><option value="Anambra state">Anambra state</option><option value="Bauchi State">Bauchi State</option><option value="Bayelsa State">Bayelsa State</option><option value="Benue State">Benue State</option><option value="Borno State">Borno State</option><option value="Cross River State">Cross River State</option><option value="Delta State">Delta State</option><option value="Ebonyi State">Ebonyi State</option><option value="Edo State">Edo State</option><option value="Ekiti State">Ekiti State</option><option value="Enugu State">Enugu State</option><option value="Federal Capital Territory">Federal Capital Territory</option><option value="Gombe State">Gombe State</option><option value="Imo State">Imo State</option><option value="Jigawa State">Jigawa State</option><option value="Kaduna State">Kaduna State</option><option value="Kano State">Kano State</option><option value="Katsina State">Katsina State</option><option value="Kebbi State">Kebbi State</option><option value="Kogi State">Kogi State</option><option value="Kwara State">Kwara State</option><option value="Lagos State">Lagos State</option><option value="Nasarawa State">Nasarawa State</option><option value="Niger State">Niger State</option><option value="Ogun State">Ogun State</option><option value="Ondo State">Ondo State</option><option value="Osun State">Osun State</option><option value="Oyo State">Oyo State</option><option value="Plateau State">Plateau State</option><option value="Rivers State">Rivers State</option><option value="Sokoto State">Sokoto State</option><option value="Taraba State">Taraba State</option><option value="Yobe State">Yobe State</option><option value="Zamfara State">Zamfara State</option></select>
+      <div class="invalid-feedback">error</div>
+      </div>
+
+      
+    <div class="col-md-6" id="idtype">
+        <div class=""><label class="nametag top form-label"> Preferred LGA for vaccination (Select the LGA where you would like to receive your vaccine)</label></div>
+        <select id="lgaselect" class="form-select" required="true" name="lga"><option value="ab Aba North Local Government Area">ab Aba North Local Government Area</option><option value="ab Aba South Local Government Area">ab Aba South Local Government Area</option><option value="ab Arochukwu Local Government Area">ab Arochukwu Local Government Area</option><option value="ab Bende Local Government Area">ab Bende Local Government Area</option><option value="ab Ikwuano Local Government Area">ab Ikwuano Local Government Area</option><option value="ab Isiala-Ngwa North Local Government Area">ab Isiala-Ngwa North Local Government Area</option><option value="ab Isiala-Ngwa South Local Government Area">ab Isiala-Ngwa South Local Government Area</option><option value="ab Isuikwuato Local Government Area">ab Isuikwuato Local Government Area</option><option value="ab Obi Nwga Local Government Area">ab Obi Nwga Local Government Area</option><option value="ab Ohafia Local Government Area">ab Ohafia Local Government Area</option><option value="ab Osisioma Ngwa Local Government Area">ab Osisioma Ngwa Local Government Area</option><option value="ab Ugwunagbo Local Government Area">ab Ugwunagbo Local Government Area</option><option value="ab Ukwa East Local Government Area">ab Ukwa East Local Government Area</option><option value="ab Ukwa West Local Government Area">ab Ukwa West Local Government Area</option><option value="ab Umuahia North Local Government Area">ab Umuahia North Local Government Area</option><option value="ab Umuahia South Local Government Area">ab Umuahia South Local Government Area</option><option value="ab Umunneochi Local Government Area">ab Umunneochi Local Government Area</option></select>
+      <div class="invalid-feedback">error</div>
+      </div>
+
+      <div class="col-md-6" id="idtype">
+        <div class=""><label class="nametag top form-label">Preferred vaccination site (Select the vaccination site where you would like to receive your vaccine)</label></div>
+        <select id="facility" name="facilityid" class="form-select" required="true"><option value="5416">ab Eziama Public Health Clinic</option><option value="5417">ab Uratta Primary Health Centre</option></select>
+      <div class="invalid-feedback">error</div>
+      </div>
+
+      <div class="col-md-6"></div>
+
+      <div class="col-md-6" id="dateofbirth">
+        <div class="">
+            <label class="nametag top form-label">Select your preferred date for vaccination (Select from the available vaccination days for your vaccination site)</label>
+            <input type="date" name="vaccineDate" class="form-control" id="vaccineDate" value="0">
+            <input type="date" name="vaccineDate" class="form-control date" id="vaccineDate" value="0">
+            <a class="" href="#"><button type="button" class="btn btn-success rounded-pill final">check availability</button></a>
+            <div class="invalid-feedback">error</div>
+        </div>
+        </div>
+
+        <div class="col-md-6" id="idtype">
+            <label class="nametag top form-label">Select your preferred time slot (Select from the available time slots for your vaccination site)</label>
+        <select class="form-select" aria-label="Default select example">
+            <option value="">Morning</option>
+            <option value="">Afternoon</option>
+          </select>
+          </div>
+
+          <hr class="line">
+
+          <div class="col-md-6">
+            <h4>Vaccination Information</h4>
+            <div class="">
+                <label class="form-check-label nametag" for="flexCheckIndeterminate">
+                    Have you taken your first dose
+                  </label>
+            <div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label nametag" for="exampleRadios1">
+                      Yes 
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label nametag" for="exampleRadios2">
+                      No
+                    </label>
+                  </div>
+                    </div>
+                    <div class="invalid-feedback">error</div>
+                </div>
+            </div>         
+            </div>
+            </div> 
+            <div class="col-lg-2"></div>
+          </div>
+      </div>
+      
+
+
+      
+    
+
+      <script type="text/javascript" src="app1.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</body>
+</html>

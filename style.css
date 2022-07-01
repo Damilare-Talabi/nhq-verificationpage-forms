@@ -1,0 +1,167 @@
+.bg-light {
+  background-color: #ffff!important;
+  height: 7.5rem;
+  box-shadow: 0 0rem 1rem #0d9e86;
+}
+.push{
+  padding-left:4rem
+}
+.navbar-expand-lg .navbar-nav .first {
+  padding-right: 1.8rem;
+}
+.dame{
+  padding-right: 1.8rem; 
+}
+.navbar-expand-lg .navbar-nav .two {
+  padding-right: 1.8rem;
+}
+.navbar-expand-lg .navbar-nav .three {
+  padding-right: 1.8rem;
+}
+.navbar-expand-lg .navbar-nav .five {
+  padding-right: 1.8rem;
+}
+.navbar-expand-lg .navbar-nav .four {
+  padding-right: 1.8rem;
+}
+/* .navbar-expand-lg .navbar-nav . {
+  margin-right: 5rem;
+} */
+.second{
+  padding:5px 20px 5px 20px;
+}
+.logo{
+  padding-left: 1rem;
+}
+.nav-link{
+  font-size: 18px;
+  font-weight: bolder;
+}
+.dropdown-item{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.second{
+  font-size: 18px;
+  font-weight: bold;
+}
+html,body{
+  background-color: #009b72;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #009b72;
+  border-color: #198754;
+}
+.container.inside{
+  background-color: white;
+  margin-top:180px;
+  margin-bottom:100px ;
+  padding-left:100px;
+  padding-right:100px;
+  padding-bottom:100px ;
+}
+.initial{
+  margin-top:50px;
+  font-size:25px;
+  margin-bottom: 30px; 
+  font-weight: bold;
+  padding-left:55px;
+}
+.movement{
+  /* margin-left:180px; */
+}
+/* .down{
+  margin-top:10px;
+} */
+
+.nametag{
+  font-weight: bold;
+  /* margin-top: 20px; */
+}
+.top{
+  margin-top: 20px;
+}
+.middle{
+  margin-bottom: 10px;
+}
+.date{
+  margin-top:10px;
+}
+.final{
+  margin-top: 30px;
+}
+
+.line{
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(182, 172, 172, 0.75), rgba(0, 0, 0, 0));
+}
+
+hr:not([size]) {
+  height: 0.2px;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #15b344;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(145, 223, 180, 0.25);
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #15b344;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1220px) {
+.logo{
+  width: 330px;
+  height:80px;
+  margin-left:-30px;
+}
+.push{
+  padding-left:2rem 
+}
+
+.nav-link{
+  font-size: 15px;}
+
+  .second{
+    font-size: 15px;}
+    .navbar-expand-lg .navbar-nav .first {
+      padding-right: 1.3rem;
+    }
+    .dame{
+      padding-right: 1.3rem; 
+    }
+    .navbar-expand-lg .navbar-nav .two {
+      padding-right: 1.3rem;
+    }
+    .navbar-expand-lg .navbar-nav .three {
+      padding-right: 1.3rem;
+    }
+    .navbar-expand-lg .navbar-nav .five {
+      padding-right: 1.3rem;
+    }
+    .navbar-expand-lg .navbar-nav .four {
+      padding-right: 1.3rem;
+    }
+
+ }
+
+ @media screen and (max-width: 465px) {
+  .logo{
+    width: 330px;
+    height:80px;
+    margin-left:-50px;
+  } 
+ }
+
+
+
+
